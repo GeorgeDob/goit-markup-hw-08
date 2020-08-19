@@ -1,0 +1,35 @@
+// Лого
+.logo-contacts {
+  padding-top: 60px;
+  margin-right: 69px;
+}
+
+.footer-logo {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+// Контакты
+
+.contacts {
+  margin-top: 0;
+}
+
+.contacts-item {
+  color: $primary-white-color;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin: 0;
+
+  &:nth-last-child(-n + 2) {
+    color: $contacts-color;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

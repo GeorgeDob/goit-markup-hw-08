@@ -1,0 +1,53 @@
+.features {
+  padding-bottom: 0;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-icon {
+  padding: 25px 102px;
+  width: 270px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-color: $portfolio-button-color;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
+
+.features-list .item {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.features-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: $title-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list .text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}

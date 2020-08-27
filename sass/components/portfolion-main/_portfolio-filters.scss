@@ -1,12 +1,23 @@
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 
-  margin-top: 0;
-  margin-bottom: 56px;
+  margin: 0;
+  padding: 0;
+}
 
-  &-nav + &-nav {
-    margin-left: 8px;
+.filter-nav {
+  @media screen and (min-width: 480px) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

@@ -1,35 +1,24 @@
-// Лого
-.logo-contacts {
-  padding-top: 60px;
-  margin-right: 69px;
-}
-
 .footer-logo {
-  display: flex;
-
   margin-bottom: 20px;
 }
 
-// Контакты
-
-.contacts {
-  margin-top: 0;
-}
-
-.contacts-item {
-  color: $primary-white-color;
+.footer-contacts {
+  margin: 0 0 60px 0;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
 
-  margin: 0;
+  & .item {
+    margin: 0;
 
-  &:nth-last-child(-n + 2) {
-    color: $contacts-color;
-  }
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
 
-  &:not(:last-child) {
-    margin-bottom: 9px;
+    &:first-child {
+      color: $primary-white-color;
+    }
   }
 }

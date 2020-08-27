@@ -1,0 +1,44 @@
+.clients {
+  text-align: center;
+}
+
+.clients {
+  & .list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -15px;
+  }
+
+  & .item {
+    width: calc((100% - 4 * 15px) / 2);
+    height: 90px;
+
+    margin: 15px;
+
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover {
+      border-color: $accent-color;
+    }
+  }
+}
+
+.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.client-link-logo {
+  fill: $social-icon-color;
+  color: $accent-color;
+
+  .clients .item:hover & {
+    fill: currentColor;
+  }
+}

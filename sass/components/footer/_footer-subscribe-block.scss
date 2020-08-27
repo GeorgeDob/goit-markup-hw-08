@@ -1,11 +1,9 @@
 .subscribe {
-  padding-top: 72px;
 }
 
 .footer-form label {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 20px;
+  //   display: block;
+  margin: 0;
 
   color: $primary-white-color;
 
@@ -16,7 +14,9 @@
 }
 
 .subscribe input {
-  width: 358px;
+  width: 100%;
+
+  margin: 20px 0;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -30,18 +30,18 @@
 }
 
 .form-field {
-  display: flex;
-  align-items: flex-end;
+  //   display: flex;
+  //   align-items: flex-end;
 }
 
 .footer-form-input {
-  display: flex;
-  flex-direction: column;
+  //   display: flex;
+  //   flex-direction: column;
 }
 
 .footer-btn {
-  display: inline-flex;
-  align-items: center;
+  //   display: inline-flex;
+  //   align-items: center;
 
   color: $primary-white-color;
   background-color: $accent-color;

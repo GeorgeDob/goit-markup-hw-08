@@ -1,24 +1,38 @@
-.footer-logo {
-  margin-bottom: 20px;
+.logo-contacts {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
 }
 
-.footer-contacts {
-  margin: 0 0 60px 0;
+// Лого
+.footer-logo {
+  padding: 0 0 20px 0;
+}
+
+// Контакты
+
+.contacts {
+  margin-top: 0;
+}
+
+.contacts-item {
+  color: $primary-white-color;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
 
-  & .item {
-    margin: 0;
+  margin: 0;
 
-    &:not(:last-child) {
-      margin-bottom: 8px;
-    }
+  &:nth-last-child(-n + 2) {
+    color: $contacts-color;
+  }
 
-    &:first-child {
-      color: $primary-white-color;
-    }
+  &:not(:last-child) {
+    margin-bottom: 9px;
   }
 }

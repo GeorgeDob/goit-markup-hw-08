@@ -1,31 +1,30 @@
+// Общие стили
 @import './utils/vars';
+@import './utils/breakpoints';
 @import './base/body';
 @import './base/visually-hidden';
 @import './base/section-container';
 
-// header
-@import './components/header/logo';
+// Шапка
 @import './components/header/page-header';
+@import './components/header/logo';
 
-// index.html
-
+// Index.html
+@import './components/index-main/section-features';
 @import './components/index-main/section-hero';
-@import './components/index-main/section_features';
-@import './components/index-main/section_directions';
-@import './components/index-main/section_our-team';
-@import './components/index-main/section_clients';
+@import './components/index-main/section-directions';
+@import './components/index-main/section-our-team';
+@import './components/index-main/section-clients';
 
-// Modal
-
+// Модальное окно
 @import './components/index-main/modal';
 
-// portfolio.html
+// Portfolio.html
+@import './components/portfolio-main/portfolio-filters';
+@import './components/portfolio-main/portfolio-list';
 
-@import './components/portfolion-main/portfolio-filters';
-@import './components/portfolion-main/portfolio-list';
-
-// footer
-@import './components/footer/section-footer';
+// Футер
+@import './components/footer/footer-main';
 @import './components/footer/footer-logo-contacts';
 @import './components/footer/footer-social';
 @import './components/footer/footer-subscribe-block';

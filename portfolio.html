@@ -17,49 +17,70 @@
 
   <body>
     <!-- Шапка -->
-    <header>
-      <div class="container header">
+    <header class="header">
+      <div class="container header-box">
         <nav class="header-nav">
           <a href="" class="logo link">
             Web <span class="studio-black">Studio</span>
           </a>
+          <div class="header-menu" data-menu>
+            <ul class="pages-nav list">
+              <li class="item">
+                <a href="./index.html" class="link">Студия</a>
+              </li>
+              <li class="item">
+                <a href="#" class="link current">Портфолио</a>
+              </li>
+              <li class="item"><a href="#" class="link">Контакты</a></li>
+            </ul>
 
-          <ul class="pages-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
+            <ul class="header-contacts list">
+              <li class="header-mail">
+                <a href="mailto:info@devstudio.com" class="contacts link"
+                  ><svg class="icon-mail">
+                    <use href="./images/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-phone">
+                <a href="tel:+380961111111" class="contacts link"
+                  ><svg class="icon-phone">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button
+            type="button"
+            class="menu-btn"
+            data-menu-button
+            aria-expanded="false"
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="icon-cross"
+                href="./images/sprite.svg#icon-cross"
+              ></use>
+              <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
         </nav>
-
-        <ul class="header-contacts list">
-          <li class="header-mail">
-            <a href="mailto:info@devstudio.com" class="contacts link"
-              ><svg class="icon-mail">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-phone">
-            <a href="tel:+380961111111" class="contacts link"
-              ><svg class="icon-phone">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
     <main>
       <section class="portfolio">
-        <div class="container">
+        <div class="container filter">
           <h1 class="visually-hiden">Портфолио</h1>
 
-          <ul class="filter">
+          <ul class="filter-btns">
             <li class="filter-nav list">
               <button class="filter-btn">Все</button>
             </li>
@@ -76,7 +97,9 @@
               <button class="filter-btn">Маркетинг</button>
             </li>
           </ul>
+        </div>
 
+        <div class="container portfolio-box">
           <ul class="portfolio-list list">
             <li class="portfolio-list-item">
               <a href="" class="link">
@@ -309,10 +332,10 @@
               Web <span class="studio-white">Studio</span>
             </a>
           </div>
-          <div class="footer-contacts">
-            <p class="item">г. Киев, пр-т Леси Украинки, 26</p>
-            <p class="item">info@example.com</p>
-            <p class="item">+38 099 111 11 11</p>
+          <div class="contacts">
+            <p class="contacts-item">г. Киев, пр-т Леси Украинки, 26</p>
+            <p class="contacts-item">info@example.com</p>
+            <p class="contacts-item">+38 099 111 11 11</p>
           </div>
         </div>
 
@@ -394,5 +417,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

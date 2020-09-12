@@ -1,11 +1,14 @@
 .filter {
   padding: 60px 15px 0;
 
+  margin-bottom: 40px;
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
   }
 
   @media screen and (min-width: $desktop) {
+    padding: 94px 15px 0;
     margin-bottom: 50px;
   }
 }
